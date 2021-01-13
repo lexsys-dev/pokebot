@@ -1,13 +1,16 @@
+#!/usr/bin/env python3
+
 import os
 from telegram.ext import Updater, CommandHandler
 import pokepy
 from modules import Type, Pic, Ability, Learnset, Random, Starter, AllInfo
 import logging
-START_TEXT = 'Hey! Pokedex here. Type /help to get list of commands'
-ABOUT_TEXT = 'Bot made by Abhay Kshatriya (vegeto1806 on Telegram).\nThe source is available at https://github.com/kshatriya-abhay/pokebot'
+
+START_TEXT = 'Hey! PokedexBR aqui! Escreva /ajuda para obter a lista de comandos'
+ABOUT_TEXT = 'Bot made by Abhay Kshatriya.\n Hosted by lexsys'
 HELP_TEXT = """
-List of available commands:
-/help - Get this list
+Lista de comandos disponíveis:
+/ajuda - Apresenta esta lista
 /about - About the bot
 Modules:
 /pokedex - Gets the ability, type and learnset of a Pokemon
@@ -91,20 +94,20 @@ def starter(update, context):
 if __name__ == "__main__":
 
 	#TOKEN = open('API_TOKEN','r').read().replace('\n','')
-	TOKEN = os.environ.get('API_TOKEN')
-
-	NAME = "veg-pokebot"
+	#TOKEN = os.environ.get('API_TOKEN')
+	TOKEN = ("1556888617:AAF-0tNYVDFaXsmtv5IE8daPQPkfOd4VmeY")
+	# NAME = "veg-pokebot"
 
     # Port is given by Heroku
-	PORT = os.environ.get('PORT')
+	# PORT = os.environ.get('PORT')
 
 	logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 
-	updater = Updater(TOKEN, use_context=True)
+	updater = Updater(TOKEN)
 
 	updater.dispatcher.add_handler(CommandHandler('start', start))
 	updater.dispatcher.add_handler(CommandHandler('about', about))
-	updater.dispatcher.add_handler(CommandHandler('help', get_help))
+	updater.dispatcher.add_handler(CommandHandler('ajuda', get_help))
 	updater.dispatcher.add_handler(CommandHandler('pokedex', all_info))
 	updater.dispatcher.add_handler(CommandHandler('type', get_type))
 	updater.dispatcher.add_handler(CommandHandler('pic', get_pic))
@@ -115,8 +118,8 @@ if __name__ == "__main__":
 
 	# Start the webhook
 
-	updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
-	updater.bot.setWebhook("https://{}.herokuapp.com/{}".format(NAME, TOKEN))
+	#updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
+	#updater.bot.setWebhook("https://{}.herokuapp.com/{}".format(NAME, TOKEN))
 
-	#updater.start_polling()
+	updater.start_polling()
 	updater.idle()
