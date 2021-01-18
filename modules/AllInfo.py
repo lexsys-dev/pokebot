@@ -11,7 +11,7 @@ def get_all_info(api, query):
 		return response
 
 	for n in pikasp.names:
-		if n.language.name == 'pt':
+		if n.language.name == 'en':
 			pname = n.name
 	PRE_URL = 'https://bulbapedia.bulbagarden.net/wiki/'
 	MID = pname + '_%28Pokémon%29'

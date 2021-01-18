@@ -1,0 +1,18 @@
+2021-01-10 23:03:19,244 - apscheduler.scheduler - INFO - Scheduler started
+2021-01-10 23:03:31,372 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2021-01-10 23:03:31,372 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2021-01-10 23:03:31,832 - telegram.ext.updater - WARNING - Exiting immediately!
+2021-01-10 23:03:49,726 - apscheduler.scheduler - INFO - Scheduler started
+2021-01-11 00:37:04,920 - telegram.ext.updater - INFO - Received signal 15 (SIGTERM), stopping...
+2021-01-11 00:37:04,920 - apscheduler.scheduler - INFO - Scheduler has been shut down
+https://bulbapedia.bulbagarden.net/wiki/Klinklang_%28Pokémon%29
+https://bulbapedia.bulbagarden.net/wiki/Rufflet_%28Pokémon%29
+https://bulbapedia.bulbagarden.net/wiki/Raikou_%28Pokémon%29
+https://bulbapedia.bulbagarden.net/wiki/Breloom_%28Pokémon%29
+https://bulbapedia.bulbagarden.net/wiki/Pawniard_%28Pokémon%29
+2021-01-13 19:10:29,583 - apscheduler.scheduler - INFO - Scheduler started
+2021-01-14 23:55:01,560 - telegram.ext.updater - INFO - Received signal 15 (SIGTERM), stopping...
+2021-01-14 23:55:01,561 - apscheduler.scheduler - INFO - Scheduler has been shut down
+https://bulbapedia.bulbagarden.net/wiki/Krookodile_%28Pokémon%29
+https://cdn.bulbagarden.net/upload/thumb/e/e5/553Krookodile.png/1200px-553Krookodile.png
+https://bulbapedia.bulbagarden.net/wiki/Escavalier_%28Pokémon%29
