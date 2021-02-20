@@ -95,8 +95,8 @@ if __name__ == "__main__":
 
 	#TOKEN = open('API_TOKEN','r').read().replace('\n','')
 	#TOKEN = os.environ.get('API_TOKEN')
-	TOKEN = ("1556888617:AAF-0tNYVDFaXsmtv5IE8daPQPkfOd4VmeY")
-	# NAME = "pokedexbrbot"
+	TOKEN = ("")
+	# NAME = ""
 
         # Port is given by Heroku
 	PORT = os.environ.get('PORT')
